@@ -4,13 +4,9 @@ import Home from './pages'
 
 function App() {
   return (
-    <html>
-      <body>
         <Router>
           <Home />
         </Router>
-      </body>
-    </html>
   );
 }
 
