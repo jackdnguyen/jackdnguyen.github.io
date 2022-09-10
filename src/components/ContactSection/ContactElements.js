@@ -1,54 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
 
-export const StyledContactForm = styled.div`
-    height:910px;
-  max-width: 1000px;
-  form {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    font-size: 16px;
-    input {
-      width: 50%;
-      height: 35px;
-      padding: 7px;
-      outline: none;
-      border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
-      &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      }
-    }
-    textarea {
-      max-width: 50%;
-      min-width: 50%;
-      width: 100%;
-      max-height: 100px;
-      min-height: 100px;
-      padding: 7px;
-      outline: none;
-      border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
-      margin-bottom: 35px;
-      &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      }
-    }
-    label {
-      margin-top: 1rem;
-    }
-    input[type="submit"] {
-      margin-top: 2rem;
-      cursor: pointer;
-      background: rgb(249, 105, 14);
-      color: white;
-      border: none;
-    }
-  }
-`;
-
 export const ContactContainer = styled.div`
     color:#fff;
     background: #f9f9f9;
@@ -60,13 +12,17 @@ export const ContactContainer = styled.div`
 export const ContactWrapper = styled.div`
     display:grid;
     z-index:1;
-    height:910px;
+    height:890px;
     width:100%;
     max-width: 1100px;
     margin-right:auto;
     margin-left:auto;
     padding: 0 24px;
     justify-content: center;
+
+    @media screen and (max-height:868px){
+        height:800px;
+    }
 `;
 
 export const ContactRow = styled.div`
