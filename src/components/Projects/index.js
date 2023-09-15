@@ -3,6 +3,7 @@ import { ProjectsContainer, ProjectH1, ProjectWrapper, ProjectCard, ProjectIcon,
 import Icon1 from '../../images/svg-9.svg'
 import Icon2 from '../../images/svg-8.svg'
 import Icon3 from '../../images/svg-6.svg'
+import Icon4 from '../../images/svg-10.svg'
 import { Button } from '../ButtonElement'
 
 const Projects = () => {
@@ -13,6 +14,15 @@ const Projects = () => {
         <ProjectsContainer id="Projects">
             <ProjectH1>Projects</ProjectH1>
             <ProjectWrapper>
+                <a href="https://container-app-trkmsk5lp3mdw.gentlerock-7f513dc1.westus2.azurecontainerapps.io/" target="_blank" rel="noreferrer">
+                <ProjectCard>
+                    <ProjectIcon src={Icon4}/>
+                    <ProjectH2>Paper Trading</ProjectH2>
+                    <ProjectP>
+                        Platform to trade stocks with virtual currency.
+                    </ProjectP>
+                </ProjectCard>
+                </a>
                 <a href="https://jackdnguyen.github.io/sorting-visualizer/" target="_blank" rel="noreferrer">
                 <ProjectCard>
                     <ProjectIcon src={Icon1}/>
@@ -22,7 +32,7 @@ const Projects = () => {
                     </ProjectP>
                 </ProjectCard>
                 </a>
-                <a href="http://jackdnguyen-covid19-dataviewer.s3-website-us-west-1.amazonaws.com/" target="_blank" rel="noreferrer">
+                <a href="https://jackdnguyen.github.io/covid19-data-viewer/" target="_blank" rel="noreferrer">
                 <ProjectCard>
                     <ProjectIcon src={Icon2} />
                     <ProjectH2>COVID-19 Data Viewer</ProjectH2>

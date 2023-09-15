@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa'
 import { VscGithub } from 'react-icons/vsc'
-
+import { BsLinkedin } from 'react-icons/bs'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from './NavbarElements'
+import "./navbar.css";
+
 export const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false)
 
@@ -19,11 +21,17 @@ export const Navbar = ({ toggle }) => {
     const externalLink = () =>{
         window.open('https://github.com/jackdnguyen', '_blank');
     }
+    const externalLink2 = () =>{
+        window.open('https://www.linkedin.com/in/jackdnguyen/', '_blank');
+    }
     return (
         <>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to="/" onClick={externalLink}><VscGithub /></NavLogo>
+                    <div className='logos'>
+                        <NavLogo to="/" onClick={externalLink}><VscGithub /></NavLogo>
+                        <NavLogo to="/" onClick={externalLink2}><BsLinkedin /></NavLogo>
+                    </div>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>

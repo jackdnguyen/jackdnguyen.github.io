@@ -37,6 +37,7 @@ export const NavLogo = styled(LinkR)`
     align-items: center;
     font-weight: bold;
     text-decoration: none;
+    padding-right: 20px;
 `;
 
 export const MobileIcon = styled.div`
